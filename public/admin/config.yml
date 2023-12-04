@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway #github
+  repo: senegalx/pyngroup # Path to your Github repository
+  branch: main # Branch to update (master by default)
+
+media_folder: "public/images/uploads" # Folder where user uploaded files should go
+public_folder: "/images/uploads"
+
+logo_url: /logo.svg
+
+slug: { { slug } }
+
+collections: # A list of collections the CMS should be able to edit
+  - label: Configuration
+    name: config
+    files:
+      - label: Menu
+        name: menu
+        file: /src/config/menu.json
+        fields:
+          - {label: "Menu Principal", name: "links", widget: "list", summary: "{{fields.label}}", collapsed: true,
+              fields: [
+                {label: "Nom", name: "label", widget: "string"},
+                {label: "Lien", name: "to", widget: "string"}]}
