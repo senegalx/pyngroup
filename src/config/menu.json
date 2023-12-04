@@ -1,0 +1,24 @@
+{
+  "links": [
+    {
+        "to": "/",
+        "label": "Accueil"
+    },
+    {
+        "to": "/a-propos",
+        "label": "A Propos"
+    },
+    {
+        "to": "/#features",
+        "label": "Solutions"
+    },
+    {
+        "to": "/#solution",
+        "label": "Produits"
+    },
+    {
+        "to": "/contact",
+        "label": "Contact"
+    }
+  ]
+}
