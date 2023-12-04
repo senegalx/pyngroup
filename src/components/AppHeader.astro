@@ -1,28 +1,7 @@
 ---
 import Container from "./Container.astro";
-import svgLogo from '/logo.svg'; 
-const links = [
-    {
-        to: "/",
-        label: "Accueil",
-    },
-    {
-        to: "/a-propos",
-        label: "A Propos",
-    },
-    {
-        to: "/#features",
-        label: "Solutions",
-    },
-    {
-        to: "/#solution",
-        label: "Produits",
-    },
-    {
-        to: "/contact",
-        label: "Contact",
-    },
-];
+import menu from "../config/menu.json";
+const { links } = menu;
 ---
 
 <script>
@@ -63,7 +42,7 @@ const links = [
                 <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
                     <a href="/#home" aria-label="logo" class="flex items-center space-x-2">
                         <div aria-hidden="true" class="flex space-x-1">
-                            <img src={svgLogo} alt="Logo" />
+                            <img src="/logo.svg" alt="Logo" />
                         </div>
                     </a>
 
